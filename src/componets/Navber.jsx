@@ -13,11 +13,11 @@ import React from 'react';
 
 const Navber = () => {
 
-    const pathname = usePathname();
-    return (
-       <div className="border-b px-2">
-      <nav className=" flex justify-between items-center  py-3 max-w-7xl mx-auto w-full border-1">
-        <div className="flex gap-1 items-center ">
+  const pathname = usePathname();
+  return (
+    <div className=" px-2">
+      <nav className=" flex justify-between items-center  py-3 w-11/12 mx-auto  border-2">
+        {/* <div className="flex gap-1 items-center ">
           <Image
             src={"/logo.png"}
             alt="logo"
@@ -26,38 +26,70 @@ const Navber = () => {
             height={35}
             className="object-cover h-auto w-auto"
           />
-          <h3 className=" font-black text-xl text-green-700">Fahbiha Agro</h3>
+          <h3 className=" font-black text-xl text-green-700">QurbaniHat</h3>
+        </div> */}
+        <div className="flex gap-2 items-center group cursor-pointer">
+          {/* লোগো এনিমেশন: মাউস নিলে ঘুরবে (Rotate) */}
+          <Image
+            src={"/logo.png"}
+            alt="logo"
+            loading="eager"
+            width={35}
+            height={35}
+            className="object-cover h-auto w-auto animate__animated animate__rotateIn animate__fast group-hover:animate__pulse"
+          />
+
+          {/* ব্র্যান্ড নাম এনিমেশন: বাম থেকে স্লাইড করে আসবে */}
+          <h3 className="font-black text-xl text-green-700 animate__animated animate__pulse animate__infinite animate__slow ">
+            QurbaniHat
+          </h3>
+      
+
+
+          {/* <h3 className="font-black text-xl text-green-700 animate__animated animate__fadeInLeft ">
+            QurbaniHat
+          </h3> */}
         </div>
+
+
+
+
+
+
         <ul className="flex items-center gap-5 text-sm font-medium">
-            <li>
-                <Link 
-                    href={"/"} 
-                    className={pathname === "/" ? "text-green-600 font-bold border-b-2" : "text-gray-600"}
-                >
-                    Home
-                </Link>
-            </li>
-            <li>
-                <Link 
-                    href={"/animals"} 
-                    className={pathname === "/animals" ? "text-green-600 font-bold border-b-2 " : "text-gray-600"}
-                >
-                    All Animals
-                </Link>
-            </li>
-            <li>
-                <Link 
-                    href={"/profile"} 
-                    className={pathname === "/profile" ? "text-green-600 font-bold border-b-2" : "text-gray-600"}
-                >
-                    Profile
-                </Link>
-            </li>
+          <li>
+            <Link
+              href={"/"}
+              className={pathname === "/" ? "text-green-600 font-bold border-b-2" : "text-gray-600"}
+            >
+              Home
+            </Link>
+          </li>
+          <li>
+            <Link
+              href={"/animals"}
+              className={pathname === "/animals" ? "text-green-600 font-bold border-b-2 " : "text-gray-600"}
+            >
+              All Animals
+            </Link>
+          </li>
+          <li>
+            <Link
+              href={"/profile"}
+              className={pathname === "/profile" ? "text-green-600 font-bold border-b-2" : "text-gray-600"}
+            >
+              Profile
+            </Link>
+          </li>
         </ul>
 
-    
 
-        <div className="flex gap-4">
+
+        <div className="flex gap-2">
+
+          <div>
+            singup
+          </div>
           {/* {!user && (
             <ul className="flex items-center  text-sm gap-5">
               <li>
@@ -68,6 +100,7 @@ const Navber = () => {
               </li>
             </ul>
           )} */}
+          <div>singin</div>
 
           {/* {user && (
             <div className="flex gap-3">
@@ -86,7 +119,8 @@ const Navber = () => {
         </div>
       </nav>
     </div>
-    );
+  );
 };
 
 export default Navber;
+
