@@ -9,7 +9,7 @@ const Banner = () => {
     return (
         <div style={{ backgroundImage: `url('/herebanner1.png')` }} className=" w-11/12 mx-auto relative h-[80vh]  bg-cover bg-no-repeat bg-center flex items-center  rounded-lg overflow-hidden shadow-2xl ">
 
-      
+      <h1>ann my one go out thsi </h1>
 
             {/* Overlay */}
             {/* <div className="w-full h-full rounded-lg bg-black/50 flex items-center ">
