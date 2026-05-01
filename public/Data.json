@@ -1,3 +1,4 @@
+
 [
   {
     "id": 1,
@@ -9,7 +10,7 @@
     "age": 4,
     "location": "Dhaka",
     "description": "Premium Brahman breed, known for high meat quality and size.",
-  "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQj5oQuPoOPhutwh-mxFFW1zzYCcs5UTItKlQ&s",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQj5oQuPoOPhutwh-mxFFW1zzYCcs5UTItKlQ&s",
     "category": "Extra Large"
   },
   {
@@ -34,7 +35,8 @@
     "weight": 480,
     "age": 3.5,
     "location": "Sylhet",
-    "description": "https://static.vecteezy.com/system/resources/thumbnails/071/060/965/small/cow-grazing-in-meadow-animal-livestock-agriculture-farmland-free-photo.jpg",
+    "description": "https://static.vecteezy.com/system/resources/thumbnails/073/237/109/small/majestic-brahman-bull-stands-in-a-golden-field-at-sunset-photo.jpg",
+    "image": "https://i.postimg.cc/friesian-cow.jpg",
     "category": "Large Animal"
   },
   {
@@ -47,7 +49,114 @@
     "age": 2.5,
     "location": "Chittagong",
     "description": "High-quality Jamnapari goat with impressive height and weight.",
-    "image": "https://images.pexels.com/photos/1101594/pexels-photo-1101594.jpeg?auto=compress&cs=tinysrgb&w=800",
+    "image": "https://i.postimg.cc/jamnapari.jpg",
+    "category": "Small Animal"
+  },
+  {
+    "id": 5,
+    "name": "Sahiwal Gold",
+    "type": "Cow",
+    "breed": "Sahiwal",
+    "price": 320000,
+    "weight": 600,
+    "age": 4,
+    "location": "Sirajganj",
+    "description": "Golden brown Sahiwal bull. Heavy weight and fully organic feed.",
+    "image": "https://static.vecteezy.com/system/resources/thumbnails/071/964/699/small/a-cow-with-a-long-horn-eating-grass-photo.jpg",
+    "category": "Extra Large"
+  },
+  {
+    "id": 6,
+    "name": "Sindhi Red Bull",
+    "type": "Cow",
+    "breed": "Sindhi",
+    "price": 190000,
+    "weight": 420,
+    "age": 3,
+    "location": "Mymensingh",
+    "description": "Strong Sindhi breed. Classic choice for a medium-to-large budget.",
+    "image": "https://i.postimg.cc/sindhi-cow.jpg",
+    "category": "Large Animal"
+  },
+  {
+    "id": 7,
+    "name": "Beetal Queen",
+    "type": "Goat",
+    "breed": "Beetal",
+    "price": 38000,
+    "weight": 42,
+    "age": 2,
+    "location": "Jessore",
+    "description": "Beautiful Beetal goat with unique spots. Healthy and fit.",
+    "image": "https://i.postimg.cc/beetal-goat.jpg",
+    "category": "Small Animal"
+  },
+  {
+    "id": 8,
+    "name": "Australian Hybrid",
+    "type": "Cow",
+    "breed": "Australian Mix",
+    "price": 240000,
+    "weight": 500,
+    "age": 3.5,
+    "location": "Comilla",
+    "description": "Fast-growing Australian hybrid bull. Very muscular build.",
+    "image": "https://i.postimg.cc/aus-cow.jpg",
+    "category": "Large Animal"
+  },
+  {
+    "id": 9,
+    "name": "Gir Special Bull",
+    "type": "Cow",
+    "breed": "Gir",
+    "price": 350000,
+    "weight": 620,
+    "age": 4.5,
+    "location": "Rajshahi",
+    "description": "Majestic Gir bull. Known for endurance and quality meat.",
+    "image": "https://i.postimg.cc/gir-cow.jpg",
+    "category": "Extra Large"
+  },
+  {
+    "id": 10,
+    "name": "Totapari Prince",
+    "type": "Goat",
+    "breed": "Totapari",
+    "price": 32000,
+    "weight": 38,
+    "age": 1.5,
+    "location": "Rangpur",
+    "description": "Young and healthy Totapari goat. Ready for the next season.",
+    "image": "https://i.postimg.cc/totapari.jpg",
+    "category": "Small Animal"
+  },
+  {
+    "id": 11,
+    "name": "Deshi Chitta Cow",
+    "type": "Cow",
+    "breed": "Local Deshi",
+    "price": 110000,
+    "weight": 250,
+    "age": 2.5,
+    "location": "Moulvibazar",
+    "description": "Pure local deshi cow. Raised in a home environment.",
+    "image": "https://i.postimg.cc/deshi-cow2.jpg",
+    "category": "Large Animal"
+  },
+  {
+    "id": 12,
+    "name": "Barbari Beauty",
+    "type": "Goat",
+    "breed": "Barbari",
+    "price": 22000,
+    "weight": 30,
+    "age": 2,
+    "location": "Sylhet",
+    "description": "Compact and healthy Barbari goat. Ideal for small family Qurbani.",
+    "image": "https://i.postimg.cc/barbari-goat.jpg",
     "category": "Small Animal"
   }
 ]
+
+
+

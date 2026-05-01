@@ -124,6 +124,7 @@
 
 import Image from 'next/image';
 import React, { use } from 'react';
+import AnimlCrad from './AnimlCrad';
 
 
 
@@ -141,7 +142,7 @@ const Future = async() => {
 
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
 
-               {displayedAnimals.map(animal=><h1 key={animal}>{animal.name}</h1>)}
+               {displayedAnimals.map(animal=><AnimlCrad key={animal.id} animal={animal}></AnimlCrad>)}
                
             </div>
         </div>

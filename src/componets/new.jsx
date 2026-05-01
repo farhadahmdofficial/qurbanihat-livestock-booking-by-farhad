@@ -521,7 +521,7 @@ export default Navber;
 <div key={animal.id} className="animate__animated animate__fadeInUp">
                         {/* <AnimalCard animal={animal} /> */}
 
-                        <h1>{animal.age}</h1>
+                    
 
 
 
