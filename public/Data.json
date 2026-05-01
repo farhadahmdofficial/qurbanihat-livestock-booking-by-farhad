@@ -91,32 +91,6 @@
     "category": "Small Animal"
   },
   {
-    "id": 8,
-    "name": "Australian Hybrid",
-    "type": "Cow",
-    "breed": "Australian Mix",
-    "price": 240000,
-    "weight": 500,
-    "age": 3.5,
-    "location": "Comilla",
-    "description": "Fast-growing Australian hybrid bull. Very muscular build.",
-    "image": "https://i.postimg.cc/aus-cow.jpg",
-    "category": "Large Animal"
-  },
-  {
-    "id": 9,
-    "name": "Gir Special Bull",
-    "type": "Cow",
-    "breed": "Gir",
-    "price": 350000,
-    "weight": 620,
-    "age": 4.5,
-    "location": "Rajshahi",
-    "description": "Majestic Gir bull. Known for endurance and quality meat.",
-    "image": "https://i.postimg.cc/gir-cow.jpg",
-    "category": "Extra Large"
-  },
-  {
     "id": 10,
     "name": "Totapari Prince",
     "type": "Goat",
