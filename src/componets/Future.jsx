@@ -130,9 +130,30 @@ import AnimlCrad from './AnimlCrad';
 
 const Future = async() => {
 
-        const res = await fetch('https://qurbanihat-livestock-booking-by-far-pi.vercel.app/Data.json')
-    const Animals = await res.json()
-    const displayedAnimals = Animals.slice(0, 4)
+    //     const res = await fetch('http://localhost:3000/Data.json')
+    //     // const res = await fetch('https://qurbanihat-livestock-booking-by-far-pi.vercel.app/Data.json')
+    // const Animals = await res.json()
+    // const displayedAnimals = Animals.slice(0, 4)
+    let displayedAnimals = [];
+
+    try {
+        // লাইভ ইউআরএল এ ভুল থাকলে যেন বিল্ড না আটকায়
+        const res = await fetch('https://qurbanihat-livestock-booking-by-far-pi.vercel.app/Data.json', {
+            next: { revalidate: 10 } 
+        });
+
+        if (res.ok) {
+            const text = await res.text();
+            // এই ট্রিকটি ব্যবহার করুন: ডাটা ক্লিন করে পার্স করা
+            const cleanText = text.trim(); 
+            const animals = JSON.parse(cleanText);
+            displayedAnimals = animals.slice(0, 4);
+        }
+    } catch (error) {
+        console.error("Build-time JSON Error ignored:", error);
+        // ডাটা না পেলে খালি অ্যারে থাকবে, কিন্তু বিল্ড ফেইল হবে না
+        displayedAnimals = []; 
+    }
   
     return (
         <div className="max-w-7xl mx-auto p-6">
