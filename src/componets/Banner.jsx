@@ -7,7 +7,7 @@ import React from 'react';
 
 const Banner = () => {
     return (
-        <div style={{ backgroundImage: `url('/herebanner1.png')` }} className=" relative h-[80vh] w-full bg-cover bg-no-repeat bg-center flex items-center  shadow-2xl">
+        <div style={{ backgroundImage: `url('/herebanner1.png')` }} className=" w-11/12 mx-auto relative h-[80vh]  bg-cover bg-no-repeat bg-center flex items-center  rounded-lg overflow-hidden shadow-2xl ">
 
             {/* Overlay */}
             {/* <div className="w-full h-full rounded-lg bg-black/50 flex items-center ">

@@ -1,7 +1,6 @@
-
 [
   {
-    "id": 2,
+    "id": 1,
     "name": "Brahman King",
     "type": "Cow",
     "breed": "Brahman",
@@ -10,11 +9,11 @@
     "age": 4,
     "location": "Dhaka",
     "description": "Premium Brahman breed, known for high meat quality and size.",
-    "image": "https://i.postimg.cc/brahman-cow.jpg",
+  "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQj5oQuPoOPhutwh-mxFFW1zzYCcs5UTItKlQ&s",
     "category": "Extra Large"
   },
   {
-    "id": 3,
+    "id": 2,
     "name": "Black Bengal Pearl",
     "type": "Goat",
     "breed": "Black Bengal",
@@ -23,11 +22,11 @@
     "age": 2,
     "location": "Kushtia",
     "description": "Pure Black Bengal goat. Very healthy and active for Qurbani.",
-    "image": "https://i.postimg.cc/black-bengal.jpg",
+    "image": "https://static.vecteezy.com/system/resources/thumbnails/062/448/821/small/majestic-black-goat-in-lush-green-pasture-free-photo.jpg",
     "category": "Small Animal"
   },
   {
-    "id": 4,
+    "id": 3,
     "name": "Holstein Friesian Giant",
     "type": "Cow",
     "breed": "Friesian",
@@ -35,12 +34,11 @@
     "weight": 480,
     "age": 3.5,
     "location": "Sylhet",
-    "description": "Massive Friesian cow, well-maintained and disease-free.",
-    "image": "https://i.postimg.cc/friesian-cow.jpg",
+    "description": "https://static.vecteezy.com/system/resources/thumbnails/071/060/965/small/cow-grazing-in-meadow-animal-livestock-agriculture-farmland-free-photo.jpg",
     "category": "Large Animal"
   },
   {
-    "id": 5,
+    "id": 4,
     "name": "Jamnapari Master",
     "type": "Goat",
     "breed": "Jamnapari",
@@ -49,111 +47,7 @@
     "age": 2.5,
     "location": "Chittagong",
     "description": "High-quality Jamnapari goat with impressive height and weight.",
-    "image": "https://i.postimg.cc/jamnapari.jpg",
-    "category": "Small Animal"
-  },
-  {
-    "id": 6,
-    "name": "Sahiwal Gold",
-    "type": "Cow",
-    "breed": "Sahiwal",
-    "price": 320000,
-    "weight": 600,
-    "age": 4,
-    "location": "Sirajganj",
-    "description": "Golden brown Sahiwal bull. Heavy weight and fully organic feed.",
-    "image": "https://i.postimg.cc/sahiwal-bull.jpg",
-    "category": "Extra Large"
-  },
-  {
-    "id": 7,
-    "name": "Sindhi Red Bull",
-    "type": "Cow",
-    "breed": "Sindhi",
-    "price": 190000,
-    "weight": 420,
-    "age": 3,
-    "location": "Mymensingh",
-    "description": "Strong Sindhi breed. Classic choice for a medium-to-large budget.",
-    "image": "https://i.postimg.cc/sindhi-cow.jpg",
-    "category": "Large Animal"
-  },
-  {
-    "id": 8,
-    "name": "Beetal Queen",
-    "type": "Goat",
-    "breed": "Beetal",
-    "price": 38000,
-    "weight": 42,
-    "age": 2,
-    "location": "Jessore",
-    "description": "Beautiful Beetal goat with unique spots. Healthy and fit.",
-    "image": "https://i.postimg.cc/beetal-goat.jpg",
-    "category": "Small Animal"
-  },
-  {
-    "id": 9,
-    "name": "Australian Hybrid",
-    "type": "Cow",
-    "breed": "Australian Mix",
-    "price": 240000,
-    "weight": 500,
-    "age": 3.5,
-    "location": "Comilla",
-    "description": "Fast-growing Australian hybrid bull. Very muscular build.",
-    "image": "https://i.postimg.cc/aus-cow.jpg",
-    "category": "Large Animal"
-  },
-  {
-    "id": 10,
-    "name": "Gir Special Bull",
-    "type": "Cow",
-    "breed": "Gir",
-    "price": 350000,
-    "weight": 620,
-    "age": 4.5,
-    "location": "Rajshahi",
-    "description": "Majestic Gir bull. Known for endurance and quality meat.",
-    "image": "https://i.postimg.cc/gir-cow.jpg",
-    "category": "Extra Large"
-  },
-  {
-    "id": 11,
-    "name": "Totapari Prince",
-    "type": "Goat",
-    "breed": "Totapari",
-    "price": 32000,
-    "weight": 38,
-    "age": 1.5,
-    "location": "Rangpur",
-    "description": "Young and healthy Totapari goat. Ready for the next season.",
-    "image": "https://i.postimg.cc/totapari.jpg",
-    "category": "Small Animal"
-  },
-  {
-    "id": 12,
-    "name": "Deshi Chitta Cow",
-    "type": "Cow",
-    "breed": "Local Deshi",
-    "price": 110000,
-    "weight": 250,
-    "age": 2.5,
-    "location": "Moulvibazar",
-    "description": "Pure local deshi cow. Raised in a home environment.",
-    "image": "https://i.postimg.cc/deshi-cow2.jpg",
-    "category": "Large Animal"
-  },
-  {
-    "id": 13,
-    "name": "Barbari Beauty",
-    "type": "Goat",
-    "breed": "Barbari",
-    "price": 22000,
-    "weight": 30,
-    "age": 2,
-    "location": "Sylhet",
-    "description": "Compact and healthy Barbari goat. Ideal for small family Qurbani.",
-    "image": "https://i.postimg.cc/barbari-goat.jpg",
+    "image": "https://images.pexels.com/photos/1101594/pexels-photo-1101594.jpeg?auto=compress&cs=tinysrgb&w=800",
     "category": "Small Animal"
   }
 ]
