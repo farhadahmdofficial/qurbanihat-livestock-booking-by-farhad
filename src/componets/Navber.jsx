@@ -26,7 +26,7 @@ const Navber = () => {
   }
   return (
     <div className=" px-2">
-      <nav className=" flex justify-between items-center  py-3 w-11/12 mx-auto  border-2">
+      <nav className=" flex justify-between items-center  py-3 w-11/12 mx-auto  ">
         {/* <div className="flex gap-1 items-center ">
           <Image
             src={"/logo.png"}
