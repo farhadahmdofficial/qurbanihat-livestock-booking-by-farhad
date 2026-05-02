@@ -48,7 +48,7 @@
     "age": 2.5,
     "location": "Chittagong",
     "description": "High-quality Jamnapari goat with impressive height and weight.",
-    "image": "https://static.vecteezy.com/system/resources/thumbnails/071/964/699/small/a-cow-with-a-long-horn-eating-grass-photo.jpg",
+    "image": "https://static.vecteezy.com/system/resources/thumbnails/071/744/157/small/cow-beef-close-up-beef-bull-grazing-near-the-river-free-photo.jpg",
     "category": "Small Animal"
   },
   {
@@ -74,7 +74,7 @@
     "age": 3,
     "location": "Mymensingh",
     "description": "Strong Sindhi breed. Classic choice for a medium-to-large budget.",
-    "image": "https://i.postimg.cc/sindhi-cow.jpg",
+    "image": "https://static.vecteezy.com/system/resources/thumbnails/005/275/034/small/brahman-bull-on-a-farm-for-genetic-improvement-of-beef-cattle-in-brazil-photo.jpg",
     "category": "Large Animal"
   },
   {
@@ -87,11 +87,11 @@
     "age": 2,
     "location": "Jessore",
     "description": "Beautiful Beetal goat with unique spots. Healthy and fit.",
-    "image": "https://i.postimg.cc/beetal-goat.jpg",
+    "image": "https://static.vecteezy.com/system/resources/thumbnails/024/808/141/small/side-view-of-black-brahman-bull-standing-on-field-at-farmland-photo.jpg",
     "category": "Small Animal"
   },
   {
-    "id": 10,
+    "id": 8,
     "name": "Totapari Prince",
     "type": "Goat",
     "breed": "Totapari",
@@ -100,11 +100,11 @@
     "age": 1.5,
     "location": "Rangpur",
     "description": "Young and healthy Totapari goat. Ready for the next season.",
-    "image": "https://i.postimg.cc/totapari.jpg",
+    "image": "https://static.vecteezy.com/system/resources/thumbnails/050/467/223/small/brown-cow-on-farm-displaying-unique-behaviors-a-glimpse-into-animal-husbandry-practices-free-photo.JPG",
     "category": "Small Animal"
   },
   {
-    "id": 11,
+    "id": 9,
     "name": "Deshi Chitta Cow",
     "type": "Cow",
     "breed": "Local Deshi",
@@ -113,11 +113,11 @@
     "age": 2.5,
     "location": "Moulvibazar",
     "description": "Pure local deshi cow. Raised in a home environment.",
-    "image": "https://i.postimg.cc/deshi-cow2.jpg",
+    "image": "https://static.vecteezy.com/system/resources/thumbnails/075/318/026/small/a-brown-cow-standing-in-a-field-of-grass-photo.jpg",
     "category": "Large Animal"
   },
   {
-    "id": 12,
+    "id": 10,
     "name": "Barbari Beauty",
     "type": "Goat",
     "breed": "Barbari",
@@ -126,7 +126,7 @@
     "age": 2,
     "location": "Sylhet",
     "description": "Compact and healthy Barbari goat. Ideal for small family Qurbani.",
-    "image": "https://i.postimg.cc/barbari-goat.jpg",
+    "image": "https://static.vecteezy.com/system/resources/thumbnails/075/052/900/small/close-up-portrait-of-a-black-and-brown-domestic-bull-photo.jpg",
     "category": "Small Animal"
   }
 ]
