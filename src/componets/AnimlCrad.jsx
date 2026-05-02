@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import Link from 'next/link';
 import React from 'react';
 
 const AnimlCrad = ({animal}) => {
@@ -33,10 +34,13 @@ const AnimlCrad = ({animal}) => {
                                             <span className="text-lg font-black text-green-700">৳ {animal.price.toLocaleString()}</span>
                                             <span className="text-sm font-semibold text-gray-600">{animal.weight} kg</span>
                                         </div>
-        
-                                        <button className="w-full bg-gray-900 text-white py-2 rounded-xl font-semibold hover:bg-green-700 transition-colors mt-2">
+
+
+                                        <Link href={`/animals/${animal.id}`}> <button className="w-full bg-gray-900 text-white py-2 rounded-xl font-semibold hover:bg-green-700 transition-colors mt-2">
                                             View Details
-                                        </button>
+                                        </button> </Link>
+        
+                                       
                                     </div>
                                 </div>
         

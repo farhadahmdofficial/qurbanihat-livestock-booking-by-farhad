@@ -87,9 +87,9 @@ const Navber = () => {
 
         <div className="flex gap-2">
 
-          <div>
+          {/* <div>
             singup
-          </div>
+          </div> */}
           {/* {!user && (
             <ul className="flex items-center  text-sm gap-5">
               <li>
@@ -100,7 +100,7 @@ const Navber = () => {
               </li>
             </ul>
           )} */}
-          <div>singin</div>
+          {/* <div>singin</div> */}
 
           {/* {user && (
             <div className="flex gap-3">
