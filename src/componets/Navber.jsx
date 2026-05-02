@@ -2,6 +2,10 @@
 
 
 "use client";
+
+
+
+
 import { Avatar, Button } from '@heroui/react';
 
 
@@ -43,7 +47,7 @@ const Navber = () => {
           <h3 className="font-black text-xl text-green-700 animate__animated animate__pulse animate__infinite animate__slow ">
             QurbaniHat
           </h3>
-      
+
 
 
           {/* <h3 className="font-black text-xl text-green-700 animate__animated animate__fadeInLeft ">
@@ -87,9 +91,27 @@ const Navber = () => {
 
         <div className="flex gap-2">
 
-          {/* <div>
-            singup
-          </div> */}
+
+
+
+
+          <ul className="flex items-center  text-sm gap-5">
+            <li>
+              <Link href={"/signup"}><Button className="w-full sm:w-auto font-bold text-white bg-green-600 hover:bg-green-700 shadow-lg transition-all duration-300 transform hover:-translate-y-1 active:scale-95 rounded-xl px-8 py-2">SignUp</Button></Link>
+            </li>
+            <li>
+              {/* <Link href={"/signin"}><Button>SignIn</Button></Link> */}
+
+              <Link href={"/signin"}><Button className="w-full sm:w-auto font-bold text-white bg-green-600 hover:bg-green-700 shadow-lg transition-all duration-300 transform hover:-translate-y-1 active:scale-95 rounded-xl px-8 py-2">SignIn</Button></Link>
+            </li>
+            {/* addd new   */}
+
+            
+
+           
+          </ul>
+
+
           {/* {!user && (
             <ul className="flex items-center  text-sm gap-5">
               <li>
