@@ -5,10 +5,12 @@ import { Avatar, Button } from '@heroui/react';
 import Image from 'next/image';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
-import { useRouter } from 'next/router';
+// import { useRouter } from 'next/router';
 import React, { useState } from 'react';
 import toast from 'react-hot-toast';
 import { FiMenu, FiX } from 'react-icons/fi'; 
+
+import { useRouter } from 'next/navigation'; // সঠিক ইম্পোর্ট নিশ্চিত করুন
 
 const Navber = () => {
   // const router = useRouter();
@@ -23,7 +25,7 @@ const Navber = () => {
 
 
 
-  // const router = useRouter();
+  const router = useRouter();
 
 
   const handleSignOut = async () => {
