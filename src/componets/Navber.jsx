@@ -133,7 +133,16 @@ const Navber = () => {
                   </>
                 ) : (
                   <div className="flex flex-col items-center gap-3">
-                    <Avatar size="md" src={user?.image} />
+                    <Avatar 
+  isBordered 
+  as="button"
+  className="transition-transform"
+  color="success"
+  name={user?.name}
+  size="md"
+  src={user?.image || "https://i.pravatar.cc/150"} // একটি ডিফল্ট ইমেজ দিয়ে টেস্ট করুন
+/>
+                    {/* <Avatar size="md" src={user?.image} /> */}
                     <Button className="w-full bg-red-500 text-white" onClick={() => {handleSignOut(); setIsOpen(false);}}>SignOut</Button>
                   </div>
                 )}
