@@ -18,7 +18,7 @@ const AnimalsDetealspage = async ({ params }) => {
         <div className="max-w-6xl mx-auto p-6 min-h-screen">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-10 bg-white shadow-2xl rounded-3xl overflow-hidden border border-gray-100">
 
-                {/* বাম পাশ: ইমেজ সেকশন */}
+                
                 <div className="relative h-[400px] md:h-full w-full group">
                     <div className="relative h-[400px] md:h-[500px] w-full rounded-2xl overflow-hidden bg-gray-100">
                         <Image
@@ -36,7 +36,7 @@ const AnimalsDetealspage = async ({ params }) => {
                     </div>
                 </div>
 
-                {/* ডান পাশ: বিস্তারিত তথ্য */}
+             
                 <div className="p-8 flex flex-col justify-center space-y-6">
                     <div>
                         <h1 className="text-4xl font-black text-gray-900">{animal.name}</h1>

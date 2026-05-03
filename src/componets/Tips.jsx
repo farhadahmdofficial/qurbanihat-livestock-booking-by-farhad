@@ -1,38 +1,6 @@
 
-// import React from 'react';
-
-// const Tips = () => {
-//     return (
-//         <div>
-//             <div className="bg-green-50 p-8 rounded-2xl border border-green-100">
-//                     <h2 className="text-2xl font-bold text-gray-800 mb-6">Essential Qurbani Tips</h2>
-//                     <ul className="space-y-4 text-gray-700">
-//                         <li className="flex items-start">
-//                             <span className="text-green-500 mr-2">✔</span>
-//                             Check for active movement and bright eyes.
-//                         </li>
-//                         <li className="flex items-start">
-//                             <span className="text-green-500 mr-2">✔</span>
-//                             Verify age by checking teeth (2 for cattle).
-//                         </li>
-//                         <li className="flex items-start">
-//                             <span className="text-green-500 mr-2">✔</span>
-//                             Ensure the animal is free from visible injuries.
-//                         </li>
-//                         <li className="flex items-start">
-//                             <span className="text-green-500 mr-2">✔</span>
-//                             Keep the environment clean after sacrifice.
-//                         </li>
-//                     </ul>
-//                 </div>
-            
-//         </div>
-//     );
-// };
-
-// export default Tips;
 import React from 'react';
-import { ShieldCheck, Stethoscope, Trash2, Milestone } from 'lucide-react'; // আইকন ব্যবহারের জন্য lucide-react (অপশনাল)
+import { ShieldCheck, Stethoscope, Trash2, Milestone } from 'lucide-react'; 
 
 const Tips = () => {
     const categories = [

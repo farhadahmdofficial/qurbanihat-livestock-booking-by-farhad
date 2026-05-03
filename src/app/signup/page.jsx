@@ -29,7 +29,7 @@ export default function SignUpPage() {
         const email = e.target.email.value;
         const password = e.target.password.value;
 
-        // লোডিং নোটিফিকেশন
+        
         const toastId = toast.loading("Creating your account...");
 
         try {
@@ -40,12 +40,12 @@ export default function SignUpPage() {
             });
 
             if (error) {
-                // এরর হলে লোডিং সরিয়ে এরর মেসেজ দেখাবে
+                
                 toast.error(error.message || "Sign up failed!", { id: toastId });
                 return;
             }
 
-            // সফল হলে
+           
             toast.success("Account created successfully!", { id: toastId });
             router.push('/');
 
@@ -56,8 +56,7 @@ export default function SignUpPage() {
 
     const handlGoogleSignIn = async () => {
         try {
-            // গুগল সাইন ইনের ক্ষেত্রে সাধারণত রিডাইরেক্ট হয়, 
-            // তাই এখানে সাকসেস মেসেজ দেখানোর চেয়ে 'Redirecting' বলা ভালো।
+            
             toast.loading("Redirecting to Google...");
 
             await authClient.signIn.social({
@@ -77,48 +76,14 @@ export default function SignUpPage() {
 
 
 
-    //   const onSubmit = async (e) => {
-    //     e.preventDefault();
-
-    //     const name = e.target.name.value;
-
-    //     const email = e.target.email.value;
-    //     const password = e.target.password.value;
-
-    //     // console.log({name, email ,password},"normal data");
-
-    //     const {data, error} = await authClient.signUp.email({
-    //         name,
-    //         email,
-    //         password,
-
-    //     })
+   
 
 
-    //     console.log( {data, error},"data and error")
-
-
-
-    //     if(!error) {
-    //         router.push('/')
-    //     }
-
-    //   };
-
-
-
-
-
-    //    const handlGoogleSignIn = async () => {
-    //     await authClient.signIn.social({
-    //         provider: 'google'
-    //     })
-    //   }
 
     return (<Card className="border mx-auto w-[95%] sm:w-[450px] py-8 md:py-10 my-10 md:my-20 shadow-lg px-4 sm:px-0">
         <h1 className="text-center text-2xl font-bold mb-6">Sign Up</h1>
 
-        {/* ফর্মের উইডথ এখন প্যারেন্ট কার্ডের সাথে অটো অ্যাডজাস্ট হবে */}
+       
         <Form className="flex w-full max-w-[350px] mx-auto flex-col gap-4" onSubmit={onSubmit}>
 
             {/* Name Field */}
