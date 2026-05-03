@@ -16,55 +16,67 @@ import { GrGoogle } from "react-icons/gr";
 
 export default function SignInPage() {
     const onSubmit = async (e) => {
-    e.preventDefault();
+        e.preventDefault();
 
-    const email = e.target.email.value;
-    const password = e.target.password.value;
+        const email = e.target.email.value;
+        const password = e.target.password.value;
 
-    
-    const loadingToast = toast.loading("Signing in...");
 
-    const { data, error } = await authClient.signIn.email({
-        email,
-        password,
-        callbackURL: "/",
-    });
+        const loadingToast = toast.loading("Signing in...");
 
-    if (error) {
-        
-        toast.error(error.message || "Failed to sign in!", { id: loadingToast });
-    } else {
-        
-        toast.success("Successfully logged in!", { id: loadingToast });
-        console.log(data);
-    }
-};
-
-const handlGoogleSignIn = async () => {
-    try {
-        await authClient.signIn.social({
-            provider: 'google'
+        const { data, error } = await authClient.signIn.email({
+            email,
+            password,
+            callbackURL: "/",
         });
-       
-        toast.success("Redirecting to Google...");
-    } catch (err) {
-        toast.error("Google Sign-In failed!");
-    }
-};
+
+        if (error) {
+
+            toast.error(error.message || "Failed to sign in!", { id: loadingToast });
+        } else {
+
+            // toast.success("Successfully logged in!", { id: loadingToast });
+
+            toast.success("Successfully logged in!", {
+                id: loadingToast,
+                duration: 3000, // ৩ সেকেন্ড পর চলে যাবে
+                icon: '👋', // কাস্টম ইমোজি বা আইকন
+                style: {
+                    borderRadius: '10px',
+                    background: '#333',
+                    color: '#fff',
+                },
+            });
+
+            console.log(data);
+        }
+    };
+
+    const handlGoogleSignIn = async () => {
+        try {
+            await authClient.signIn.social({
+                provider: 'google'
+            });
+
+            toast.success("Redirecting to Google...");
+        } catch (err) {
+            toast.error("Google Sign-In failed!");
+        }
+    };
 
 
 
 
 
 
-   
+
 
 
 
     return (<Card className="border mx-auto w-[95%] sm:w-[450px] md:w-[500px] py-10 my-10 md:my-25 shadow-lg">
         <h1 className="text-center text-2xl font-bold mb-6">Sign In</h1>
 
-        
+
         <Form className="flex w-[90%] sm:w-full max-w-sm mx-auto flex-col gap-4" onSubmit={onSubmit}>
             <TextField
                 isRequired
@@ -110,7 +122,7 @@ const handlGoogleSignIn = async () => {
                 <FieldError className="text-xs text-red-500" />
             </TextField>
 
-            
+
             <div className="flex flex-col sm:flex-row gap-3 mt-2">
                 <Button type="submit" className="flex-1 bg-green-600 text-white hover:bg-green-700 py-2">
                     <Check size={18} className="mr-1" />
@@ -138,6 +150,6 @@ const handlGoogleSignIn = async () => {
             </Button>
         </div>
     </Card>
-       
+
     );
 }
