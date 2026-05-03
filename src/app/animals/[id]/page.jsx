@@ -1,6 +1,7 @@
 
 
 
+import BookingForm from '@/componets/BookingForm';
 import Image from 'next/image';
 import React from 'react';
 
@@ -72,9 +73,11 @@ const AnimalsDetealspage = async ({ params }) => {
                     </div>
 
                     <div className="pt-6">
-                        <button className="w-full bg-green-700 text-white py-4 rounded-2xl font-bold text-xl hover:bg-gray-900 transition-all shadow-lg active:scale-95">
+                        <BookingForm animalName={animal.name} />
+
+                        {/* <button className="w-full bg-green-700 text-white py-4 rounded-2xl font-bold text-xl hover:bg-gray-900 transition-all shadow-lg active:scale-95">
                             Confirm Booking Now
-                        </button>
+                        </button> */}
                         <p className="text-center text-sm text-gray-400 mt-4 italic">
                             * Please visit our farm for a physical inspection before final payment.
                         </p>
