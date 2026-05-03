@@ -94,22 +94,7 @@ const Navber = () => {
               </div>
             ) : (
               <div className="flex items-center gap-4">
-                {/* <Avatar size="sm" isBordered color="success" src={user?.image} /> */}
-
-
-                <Avatar 
-  size="sm" 
-  isBordered 
-  color="success" 
-  src={user?.image || ""} 
-  imgProps={{
-    referrerPolicy: "no-referrer", // এটি গুগল ইমেজের জন্য অত্যন্ত জরুরি
-  }} 
-/>
-
-
-                
-
+                <Avatar size="sm" isBordered color="success" src={user?.image} />
                 
 
                 <Button className="bg-red-500 text-white font-semibold" onClick={handleSignOut} size="sm">SignOut</Button>
