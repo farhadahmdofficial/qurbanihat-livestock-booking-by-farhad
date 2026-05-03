@@ -36,7 +36,22 @@ const Navber = () => {
         await authClient.signOut();
 
         // সফল হলে লোডিং টোস্টটি সাকসেস মেসেজে আপডেট হবে
-        toast.success("Successfully signed out!", { id: toastId });
+        // toast.success("Successfully signed out!", { id: toastId });
+
+        
+
+        toast.success("Successfully signed out!", {
+  id: toastId,
+  duration: 3000, // ৩ সেকেন্ড পর চলে যাবে
+  icon: '👋', // কাস্টম ইমোজি বা আইকন
+  style: {
+    borderRadius: '10px',
+    background: '#333',
+    color: '#fff',
+  },
+});
+
+
 
         // রিডাইরেক্ট করার আগে ছোট একটি চেক
         if (router) {
