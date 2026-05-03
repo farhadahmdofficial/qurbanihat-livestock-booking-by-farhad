@@ -5,11 +5,15 @@ import { Avatar, Button } from '@heroui/react';
 import Image from 'next/image';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
+import { useRouter } from 'next/router';
 import React, { useState } from 'react';
 import toast from 'react-hot-toast';
 import { FiMenu, FiX } from 'react-icons/fi'; 
 
 const Navber = () => {
+  const router = useRouter();
+
+
   const [isOpen, setIsOpen] = useState(false); 
   const userData = authClient.useSession();
   const user = userData.data?.user;
@@ -90,7 +94,24 @@ const Navber = () => {
               </div>
             ) : (
               <div className="flex items-center gap-4">
-                <Avatar size="sm" isBordered color="success" src={user?.image} />
+                {/* <Avatar size="sm" isBordered color="success" src={user?.image} /> */}
+
+
+                <Avatar 
+  size="sm" 
+  isBordered 
+  color="success" 
+  src={user?.image || ""} 
+  imgProps={{
+    referrerPolicy: "no-referrer", // এটি গুগল ইমেজের জন্য অত্যন্ত জরুরি
+  }} 
+/>
+
+
+                
+
+                
+
                 <Button className="bg-red-500 text-white font-semibold" onClick={handleSignOut} size="sm">SignOut</Button>
               </div>
             )}
@@ -130,8 +151,9 @@ const Navber = () => {
                   </>
                 ) : (
                   <div className="flex flex-col items-center gap-3"> 
-                  
+
                     <Avatar size="md" src={user?.image} />
+
                     <Button className="w-full bg-red-500 text-white" onClick={() => {handleSignOut(); setIsOpen(false);}}>SignOut</Button>
                   </div>
                 )}
