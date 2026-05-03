@@ -88,10 +88,16 @@ const Navber = () => {
             {!user && (
             <ul className="flex items-center  text-sm gap-5">
               <li>
-                <Link href={"/signup"}>SignUp</Link>
+                {/* <Link href={"/signup"}>SignUp</Link> */}
+
+
+                <Link href={"/signup"}><Button className="w-full font-bold text-white bg-green-600">SignUp</Button></Link>
               </li>
               <li>
-                <Link href={"/signin"}>SignIn</Link>
+
+                
+                <Link href={"/signin"}> <Button className="w-full font-bold border border-green-600 text-green-700 bg-transparent">SignIn</Button></Link>
+                {/* <Link href={"/signin"}>SignIn</Link> */}
               </li>
             </ul>
           )}
@@ -163,10 +169,16 @@ const Navber = () => {
                  {!user && (
             <ul className="flex items-center  text-sm gap-5">
               <li>
-                <Link href={"/signup"}>SignUp</Link>
+                {/* <Link href={"/signup"}>SignUp</Link> */}
+
+
+                <Link href={"/signup"}><Button className="w-full font-bold text-white bg-green-600">SignUp</Button></Link>
               </li>
               <li>
-                <Link href={"/signin"}>SignIn</Link>
+
+                
+                <Link href={"/signin"}> <Button className="w-full font-bold border border-green-600 text-green-700 bg-transparent">SignIn</Button></Link>
+                {/* <Link href={"/signin"}>SignIn</Link> */}
               </li>
             </ul>
           )}
