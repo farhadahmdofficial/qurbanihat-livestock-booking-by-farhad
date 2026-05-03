@@ -184,7 +184,7 @@ const Navber = () => {
           )}
 
           {user && (
-            <div className="flex gap-3">
+            <div className="flex flex-row gap-3">
               <Avatar size="sm">
                 <Avatar.Image
                   alt="John Doe"
