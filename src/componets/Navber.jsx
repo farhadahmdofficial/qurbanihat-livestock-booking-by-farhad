@@ -83,7 +83,39 @@ const Navber = () => {
 
           {/* Right Side Actions (Auth) */}
           <div className="hidden md:flex items-center gap-3">
-            {!user ? (
+
+
+            {!user && (
+            <ul className="flex items-center  text-sm gap-5">
+              <li>
+                <Link href={"/signup"}>SignUp</Link>
+              </li>
+              <li>
+                <Link href={"/signin"}>SignIn</Link>
+              </li>
+            </ul>
+          )}
+
+          {user && (
+            <div className="flex gap-3">
+              <Avatar size="sm">
+                <Avatar.Image
+                  alt="John Doe"
+                  src={user?.image}
+                  referrerPolicy="no-referrer"
+                />
+                <Avatar.Fallback>{user?.name.charAt(0)}</Avatar.Fallback>
+              </Avatar>
+
+              <Button onClick={handleSignOut} size="sm" variant="danger">SignOut</Button>
+            </div>
+          )}
+
+
+
+{/* add new  */}
+
+            {/* {!user ? (
               <div className="flex gap-3">
                 <Link href={"/signup"}>
                   <Button className="font-bold text-white bg-green-600 hover:bg-green-700 rounded-xl px-6">SignUp</Button>
@@ -99,7 +131,7 @@ const Navber = () => {
 
                 <Button className="bg-red-500 text-white font-semibold" onClick={handleSignOut} size="sm">SignOut</Button>
               </div>
-            )}
+            )} */}
           </div>
 
           {/* Mobile Menu Button */}
@@ -125,7 +157,44 @@ const Navber = () => {
               </li>
               
               <div className="flex flex-col gap-2 pt-2 border-t">
-                {!user ? (
+
+
+
+                 {!user && (
+            <ul className="flex items-center  text-sm gap-5">
+              <li>
+                <Link href={"/signup"}>SignUp</Link>
+              </li>
+              <li>
+                <Link href={"/signin"}>SignIn</Link>
+              </li>
+            </ul>
+          )}
+
+          {user && (
+            <div className="flex gap-3">
+              <Avatar size="sm">
+                <Avatar.Image
+                  alt="John Doe"
+                  src={user?.image}
+                  referrerPolicy="no-referrer"
+                />
+                <Avatar.Fallback>{user?.name.charAt(0)}</Avatar.Fallback>
+              </Avatar>
+
+              <Button onClick={handleSignOut} size="sm" variant="danger">SignOut</Button>
+            </div>
+          )}
+
+
+
+
+
+
+
+{/* add new  */}
+
+                {/* {!user ? (
                   <>
                     <Link href={"/signup"} onClick={() => setIsOpen(false)}>
                       <Button className="w-full font-bold text-white bg-green-600">SignUp</Button>
@@ -141,7 +210,7 @@ const Navber = () => {
 
                     <Button className="w-full bg-red-500 text-white" onClick={() => {handleSignOut(); setIsOpen(false);}}>SignOut</Button>
                   </div>
-                )}
+                )} */}
               </div>
             </ul>
           </div>
