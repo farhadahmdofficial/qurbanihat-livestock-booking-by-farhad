@@ -162,12 +162,12 @@ const Navber = () => {
                 <Link href={"/profile"} className={pathname === "/profile" ? "text-green-600" : ""}>Profile</Link>
               </li>
               
-              <div className="flex flex-col gap-2 pt-2 border-t">
+              <div className="flex flex-col gap-2 pt-2 border-t mx-auto items-center">
 
 
 
                  {!user && (
-            <ul className="flex items-center  text-sm gap-5">
+            <ul className="flex flex-row items-center  text-sm gap-5">
               <li>
                 {/* <Link href={"/signup"}>SignUp</Link> */}
 
