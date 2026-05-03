@@ -11,7 +11,7 @@ import toast from 'react-hot-toast';
 import { FiMenu, FiX } from 'react-icons/fi'; 
 
 const Navber = () => {
-  const router = useRouter();
+  // const router = useRouter();
 
 
   const [isOpen, setIsOpen] = useState(false); 
@@ -95,7 +95,7 @@ const Navber = () => {
             ) : (
               <div className="flex items-center gap-4">
                 <Avatar size="sm" isBordered color="success" src={user?.image} />
-                
+
 
                 <Button className="bg-red-500 text-white font-semibold" onClick={handleSignOut} size="sm">SignOut</Button>
               </div>
