@@ -20,13 +20,15 @@ const AnimalsDetealspage = async ({ params }) => {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-10 bg-white shadow-2xl rounded-3xl overflow-hidden border border-gray-100">
 
                 
-                <div className="relative h-[400px] md:h-full w-full group p-3">
-                    <div className="relative h-[400px] md:h-[500px] w-full rounded-2xl overflow-hidden bg-gray-100">
+                {/* <div className="relative h-[400px] md:h-full w-full group p-3 border-8"> */}
+                <div className="relative h-72 md:h-full w-full group p-3 ">
+                    <div className="relative h-70 md:h-80 w-full rounded-2xl overflow-hidden bg-gray-100">
+                    {/* <div className="relative h-[400px] md:h-[500px] w-full rounded-2xl overflow-hidden bg-gray-100"> */}
                         <Image
                             src={animal.image}
                             alt={animal.name}
                             fill
-                            className="object-cover   " // 'object-cover' এর বদলে 'object-contain p-2' ব্যবহার করুন
+                            className="object-cover " // 'object-cover' এর বদলে 'object-contain p-2' ব্যবহার করুন
                             priority
                             unoptimized={true}
                         />
