@@ -187,28 +187,54 @@ const Navber = () => {
 
           
 
-          {user && (<div className="flex flex-row items-center gap-3 ">
-    {/* Avatar Section */}
-    <div className="flex flex-row gap-1">
-      <Avatar size="sm" isBordered color="success">
-        <Avatar.Image
-          alt={user?.name || "User"}
-          src={user?.image}
-          referrerPolicy="no-referrer"
-        />
-        <Avatar.Fallback>{user?.name?.charAt(0) || "U"}</Avatar.Fallback>
-      </Avatar>
-    </div>
+          {user && (<div className="flex flex-row gap-3">
 
-    {/* Button Section */}
-    <Button 
-      onClick={handleSignOut} 
-      size="sm" 
-      className="bg-red-500 hover:bg-red-600 text-white font-medium shrink-0"
-    >
-      SignOut
-    </Button>
-  </div>
+            <div>
+
+              <Avatar size="sm">
+                <Avatar.Image
+                  alt="John Doe"
+                  src={user?.image}
+                  referrerPolicy="no-referrer"
+                />
+                <Avatar.Fallback>{user?.name.charAt(0)}</Avatar.Fallback>
+              </Avatar>
+            </div>
+
+
+
+            <div>
+
+              <Button onClick={handleSignOut} size="sm" variant="danger">SignOut</Button>
+            </div>
+
+            </div>
+
+
+
+
+  //           <div className="flex flex-row items-center gap-3 ">
+  //   {/* Avatar Section */}
+  //   <div className="flex flex-row gap-1">
+  //     <Avatar size="sm" isBordered color="success">
+  //       <Avatar.Image
+  //         alt={user?.name || "User"}
+  //         src={user?.image}
+  //         referrerPolicy="no-referrer"
+  //       />
+  //       <Avatar.Fallback>{user?.name?.charAt(0) || "U"}</Avatar.Fallback>
+  //     </Avatar>
+  //   </div>
+
+  //   {/* Button Section */}
+  //   <Button 
+  //     onClick={handleSignOut} 
+  //     size="sm" 
+  //     className="bg-red-500 hover:bg-red-600 text-white font-medium shrink-0"
+  //   >
+  //     SignOut
+  //   </Button>
+  // </div>
 
 
 
