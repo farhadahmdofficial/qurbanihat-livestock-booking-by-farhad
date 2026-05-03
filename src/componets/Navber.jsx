@@ -20,24 +20,54 @@ const Navber = () => {
 
   const pathname = usePathname();
 
-  const handleSignOut = async () => {
-    try {
-        
-        const toastId = toast.loading("Signing out...");
 
+
+
+  const router = useRouter();
+
+
+  const handleSignOut = async () => {
+    // লোডিং শুরু
+    const toastId = toast.loading("Signing out...");
+
+    try {
         await authClient.signOut();
 
-        
+        // সফল হলে লোডিং টোস্টটি সাকসেস মেসেজে আপডেট হবে
         toast.success("Successfully signed out!", { id: toastId });
 
-      
-        router.push('/signin'); 
+        // রিডাইরেক্ট করার আগে ছোট একটি চেক
+        if (router) {
+            router.push('/signin');
+            router.refresh(); // সেশন ক্লিন নিশ্চিত করতে
+        }
         
     } catch (err) {
-        
-        toast.error("Failed to sign out. Please try again.");
+        // যদি কোনো এরর হয়, তবে লোডিং টোস্টটি এরর মেসেজে আপডেট হবে
+        // এতে আলাদা কোনো নতুন টোস্ট আসবে না
+        toast.error("Failed to sign out. Please try again.", { id: toastId });
+        console.error("Sign out error details:", err);
     }
 };
+
+//   const handleSignOut = async () => {
+//     try {
+        
+//         const toastId = toast.loading("Signing out...");
+
+//         await authClient.signOut();
+
+        
+//         toast.success("Successfully signed out!", { id: toastId });
+
+      
+//         router.push('/signin'); 
+        
+//     } catch (err) {
+        
+//         toast.error("Failed to sign out. Please try again.");
+//     }
+// };
 
 
 
