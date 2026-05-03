@@ -3,7 +3,7 @@ import { betterAuth } from "better-auth";
 import { MongoClient } from "mongodb";
 import { mongodbAdapter } from "better-auth/adapters/mongodb";
 
-// বিল্ড টাইমে যেন MONGODB_URI এর কারণে ক্র্যাশ না করে সেজন্য চেক
+
 const uri = process.env.MONGODB_URI || "mongodb://localhost:27017/fake-db-for-build";
 const client = new MongoClient(uri);
 const db = client.db("qurbanihat");
@@ -13,7 +13,7 @@ export const auth = betterAuth({
     client
   }),
   
-  // baseURL এবং secret অবশ্যই স্ট্রিং হতে হবে, undefined হলে startsWith এরর আসবে
+  
   baseURL: process.env.BETTER_AUTH_URL || "https://qurbanihat-livestock-booking-by-far-pi.vercel.app",
   secret: process.env.BETTER_AUTH_SECRET || "fallback_secret_for_build_only", 
 
@@ -104,8 +104,3 @@ export const auth = betterAuth({
 
 
 
-// import { betterAuth } from "better-auth";
-
-// export const auth = betterAuth({
-//   //...
-// });
