@@ -20,19 +20,19 @@ const AnimalsDetealspage = async ({ params }) => {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-10 bg-white shadow-2xl rounded-3xl overflow-hidden border border-gray-100">
 
                 
-                <div className="relative h-[400px] md:h-full w-full group">
+                <div className="relative h-[400px] md:h-full w-full group p-3">
                     <div className="relative h-[400px] md:h-[500px] w-full rounded-2xl overflow-hidden bg-gray-100">
                         <Image
                             src={animal.image}
                             alt={animal.name}
                             fill
-                            className="object-contain p-2  " // 'object-cover' এর বদলে 'object-contain' ব্যবহার করুন
+                            className="object-cover   " // 'object-cover' এর বদলে 'object-contain p-2' ব্যবহার করুন
                             priority
                             unoptimized={true}
                         />
                     </div>
                    
-                    <div className="absolute top-4 left-4 bg-green-600 text-white px-4 py-1 rounded-full text-sm font-bold shadow-lg">
+                    <div className="absolute top-6 left-6 bg-green-600 text-white px-4 py-1 rounded-full text-sm font-bold shadow-lg">
                         {animal.category}
                     </div>
                 </div>
