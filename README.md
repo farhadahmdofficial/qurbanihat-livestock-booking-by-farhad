@@ -31,7 +31,7 @@ As part of my frontend development journey, this project showcases my expertise 
 
 1.  **Clone the repository:**
     ```bash
-    git clone [https://github.com/your-username/qurbanihat.git](https://github.com/your-username/qurbanihat.git)
+    git clone (https://github.com/farhadahmdofficial/qurbanihat-livestock-booking-by-farhad/tree/main)
     ```
 2.  **Install dependencies:**
     ```bash
@@ -54,11 +54,12 @@ As part of my frontend development journey, this project showcases my expertise 
 Contributions, issues, and feature requests are welcome! Feel free to check the [issues page](https://github.com/your-username/qurbanihat/issues).
 
 ## 👤 Author
+
 **Farhad Ahmed**
-*   BBA Student at Moulvibazar Govt College.
-*   Aspiring Frontend Web Developer.
-*   LinkedIn: [Your Profile Link]
-*   GitHub: [Your GitHub Link]
+*   🎓 BBA Student at Moulvibazar Govt College
+*   💻 Aspiring Frontend Web Developer
+*   🔗 **LinkedIn:** [farhadahmedofficial](https://www.linkedin.com/in/farhadahmedofficial/)
+*   🐙 **GitHub:** [farhadahmdofficial](https://github.com/farhadahmdofficial)
 
 ---
 ⭐️ If you like this project, give it a star!
