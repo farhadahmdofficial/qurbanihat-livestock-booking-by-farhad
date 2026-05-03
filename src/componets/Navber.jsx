@@ -189,7 +189,7 @@ const Navber = () => {
 
           {user && (<div className="flex flex-row items-center gap-3 shrink-0">
     {/* Avatar Section */}
-    <div className="flex-shrink-0">
+    <div className="flex flex-row">
       <Avatar size="sm" isBordered color="success">
         <Avatar.Image
           alt={user?.name || "User"}
