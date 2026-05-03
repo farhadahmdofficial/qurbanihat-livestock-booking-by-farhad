@@ -130,10 +130,7 @@ const Navber = () => {
                   </>
                 ) : (
                   <div className="flex flex-col items-center gap-3"> 
-
-
-                    
- 
+                  
                     <Avatar size="md" src={user?.image} />
                     <Button className="w-full bg-red-500 text-white" onClick={() => {handleSignOut(); setIsOpen(false);}}>SignOut</Button>
                   </div>

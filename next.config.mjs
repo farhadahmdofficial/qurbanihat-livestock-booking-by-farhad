@@ -4,6 +4,13 @@
 const nextConfig = {
   images: {
     remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 'lh3.googleusercontent.com',
+        port: '',
+        pathname: '/**', // এখানে '/**' হবে যাতে এই ডোমেইনের সব ইমেজ সাপোর্ট করে
+      },
+     
      {
         protocol: 'https',
         hostname: '**', 
@@ -23,10 +30,4 @@ const nextConfig = {
 export default nextConfig;
 
 
-// /** @type {import('next').NextConfig} */
-// const nextConfig = {
-//   /* config options here */
-//   reactCompiler: true,
-// };
 
-// export default nextConfig;
