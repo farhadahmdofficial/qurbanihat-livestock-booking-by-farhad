@@ -50,8 +50,8 @@ export default function SignUpPage() {
 
             toast.success("Account created successfully!", {
                             id: loadingToast,
-                            duration: 3000, // ৩ সেকেন্ড পর চলে যাবে
-                            icon: '👋', // কাস্টম ইমোজি বা আইকন
+                            duration: 3000, 
+                            icon: '👋', 
                             style: {
                                 borderRadius: '10px',
                                 background: '#333',
@@ -263,16 +263,3 @@ export default function SignUpPage() {
 }
 
 
-// const image = e.target.image.value;
-
-// import React from 'react';
-
-// const SingnUPpage = () => {
-//     return (
-//         <div>
-//             this singnuppage
-//         </div>
-//     );
-// };
-
-// export default SingnUPpage;

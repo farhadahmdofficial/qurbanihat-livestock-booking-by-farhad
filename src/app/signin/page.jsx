@@ -39,8 +39,8 @@ export default function SignInPage() {
 
             toast.success("Successfully logged in!", {
                 id: loadingToast,
-                duration: 3000, // ৩ সেকেন্ড পর চলে যাবে
-                icon: '👋', // কাস্টম ইমোজি বা আইকন
+                duration: 3000, 
+                icon: '👋', 
                 style: {
                     borderRadius: '10px',
                     background: '#333',

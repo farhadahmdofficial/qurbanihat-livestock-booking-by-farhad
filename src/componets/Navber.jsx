@@ -8,9 +8,9 @@ import { usePathname } from 'next/navigation';
 // import { useRouter } from 'next/router';
 import React, { useState } from 'react';
 import toast from 'react-hot-toast';
-import { FiMenu, FiX } from 'react-icons/fi'; 
+import { FiLogOut, FiMenu, FiX } from 'react-icons/fi'; 
 
-import { useRouter } from 'next/navigation'; // সঠিক ইম্পোর্ট নিশ্চিত করুন
+import { useRouter } from 'next/navigation'; 
 
 const Navber = () => {
   // const router = useRouter();
@@ -29,22 +29,23 @@ const Navber = () => {
 
 
   const handleSignOut = async () => {
-    // লোডিং শুরু
+    
     const toastId = toast.loading("Signing out...");
 
     try {
         await authClient.signOut();
 
-        // সফল হলে লোডিং টোস্টটি সাকসেস মেসেজে আপডেট হবে
+        
         // toast.success("Successfully signed out!", { id: toastId });
 
-        
+
 
         toast.success("Successfully signed out!", {
   id: toastId,
-  duration: 3000, // ৩ সেকেন্ড পর চলে যাবে
-  icon: '👋', // কাস্টম ইমোজি বা আইকন
-  style: {
+  duration: 3000,
+  // icon: '👋', 
+    icon: <FiLogOut className="text-white" />,
+   style: {
     borderRadius: '10px',
     background: '#333',
     color: '#fff',
@@ -53,15 +54,14 @@ const Navber = () => {
 
 
 
-        // রিডাইরেক্ট করার আগে ছোট একটি চেক
+        
         if (router) {
             router.push('/signin');
-            router.refresh(); // সেশন ক্লিন নিশ্চিত করতে
+            router.refresh(); 
         }
         
     } catch (err) {
-        // যদি কোনো এরর হয়, তবে লোডিং টোস্টটি এরর মেসেজে আপডেট হবে
-        // এতে আলাদা কোনো নতুন টোস্ট আসবে না
+        
         toast.error("Failed to sign out. Please try again.", { id: toastId });
         console.error("Sign out error details:", err);
     }
