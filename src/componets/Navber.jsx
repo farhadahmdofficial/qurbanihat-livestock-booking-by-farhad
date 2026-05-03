@@ -133,16 +133,11 @@ const Navber = () => {
                   </>
                 ) : (
                   <div className="flex flex-col items-center gap-3"> 
-                                                                <Avatar 
-  showFallback 
-  size="md" 
-  src={user?.image} 
-  name={user?.name || "User"} 
-/>
+
 
                     
  
-                    {/* <Avatar size="md" src={user?.image} /> */}
+                    <Avatar size="md" src={user?.image} />
                     <Button className="w-full bg-red-500 text-white" onClick={() => {handleSignOut(); setIsOpen(false);}}>SignOut</Button>
                   </div>
                 )}
