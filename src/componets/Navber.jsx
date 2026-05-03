@@ -160,7 +160,7 @@ const Navber = () => {
                 <Avatar.Fallback>{user?.name.charAt(0)}</Avatar.Fallback>
               </Avatar>
 
-              <Button onClick={handleSignOut} size="sm" variant="danger">SignOut</Button>
+              <Button onClick={handleSignOut} size="sm" variant="danger"><FiLogOut className="text-white" /> SignOut</Button>
             </div>
           )}
 
@@ -252,7 +252,7 @@ const Navber = () => {
 
             <div className=' '>
 
-              <Button onClick={handleSignOut} size="sm" variant="danger">SignOut</Button>
+              <Button onClick={handleSignOut} size="sm" variant="danger"><FiLogOut className="text-white" /> SignOut</Button>
             </div>
 
             </div>
