@@ -187,7 +187,7 @@ const Navber = () => {
 
           
 
-          {user && (<div className="flex flex-row gap-3 border-2 border-gray-300">
+          {user && (<div className="gap-3 border-2 border-gray-300">
 
             <div className='border-2 border-red-300'>
 
