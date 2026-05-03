@@ -17,7 +17,7 @@ export default function NotFound() {
 
       {/* Descriptive Text */}
       <p className="text-gray-600 max-w-md mb-8 animate__animated animate__fadeInUp">
-        Sorry, the page you are looking for isn't available in our market or the link might be broken.
+        Sorry, the page you are looking for is not available in our market or the link might be broken.
       </p>
 
       {/* Action Button */}
