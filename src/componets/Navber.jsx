@@ -187,9 +187,9 @@ const Navber = () => {
 
           
 
-          {user && (<div className="flex flex-row gap-3">
+          {user && (<div className="flex flex-row gap-3 border-2 border-gray-300">
 
-            <div>
+            <div className='border-2 border-red-300'>
 
               <Avatar size="sm">
                 <Avatar.Image
@@ -203,7 +203,7 @@ const Navber = () => {
 
 
 
-            <div>
+            <div className='border-2 border-yellow-300'>
 
               <Button onClick={handleSignOut} size="sm" variant="danger">SignOut</Button>
             </div>
