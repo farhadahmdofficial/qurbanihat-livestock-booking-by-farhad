@@ -46,7 +46,18 @@ export default function SignUpPage() {
             }
 
            
-            toast.success("Account created successfully!", { id: toastId });
+            // toast.success("Account created successfully!", { id: toastId });
+
+            toast.success("Account created successfully!", {
+                            id: loadingToast,
+                            duration: 3000, // ৩ সেকেন্ড পর চলে যাবে
+                            icon: '👋', // কাস্টম ইমোজি বা আইকন
+                            style: {
+                                borderRadius: '10px',
+                                background: '#333',
+                                color: '#fff',
+                            },
+                        });
             router.push('/');
 
         } catch (err) {
@@ -144,7 +155,7 @@ export default function SignUpPage() {
             <div className="flex flex-col sm:flex-row gap-3 mt-2">
                 <Button type="submit" className="flex-1 bg-green-600 text-white hover:bg-green-700 font-bold py-2">
                     <Check className="mr-1" size={18} />
-                    Submit
+                    Sign Up
                 </Button>
                 <Button type="reset" variant="secondary" className="flex-1 py-2">
                     Reset

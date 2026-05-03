@@ -126,7 +126,7 @@ export default function SignInPage() {
             <div className="flex flex-col sm:flex-row gap-3 mt-2">
                 <Button type="submit" className="flex-1 bg-green-600 text-white hover:bg-green-700 py-2">
                     <Check size={18} className="mr-1" />
-                    Submit
+                    Sign In
                 </Button>
                 <Button type="reset" variant="secondary" className="flex-1 border border-gray-300 py-2">
                     Reset
