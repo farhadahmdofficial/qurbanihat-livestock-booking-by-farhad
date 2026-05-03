@@ -183,19 +183,49 @@ const Navber = () => {
             </ul>
           )}
 
-          {user && (
-            <div className="flex flex-row gap-3">
-              <Avatar size="sm">
-                <Avatar.Image
-                  alt="John Doe"
-                  src={user?.image}
-                  referrerPolicy="no-referrer"
-                />
-                <Avatar.Fallback>{user?.name.charAt(0)}</Avatar.Fallback>
-              </Avatar>
 
-              <Button onClick={handleSignOut} size="sm" variant="danger">SignOut</Button>
-            </div>
+
+          
+
+          {user && (<div className="flex flex-row items-center gap-3 shrink-0">
+    {/* Avatar Section */}
+    <div className="flex-shrink-0">
+      <Avatar size="sm" isBordered color="success">
+        <Avatar.Image
+          alt={user?.name || "User"}
+          src={user?.image}
+          referrerPolicy="no-referrer"
+        />
+        <Avatar.Fallback>{user?.name?.charAt(0) || "U"}</Avatar.Fallback>
+      </Avatar>
+    </div>
+
+    {/* Button Section */}
+    <Button 
+      onClick={handleSignOut} 
+      size="sm" 
+      className="bg-red-500 hover:bg-red-600 text-white font-medium shrink-0"
+    >
+      SignOut
+    </Button>
+  </div>
+
+
+
+
+
+            // <div className="flex flex-row gap-3">
+            //   <Avatar size="sm">
+            //     <Avatar.Image
+            //       alt="John Doe"
+            //       src={user?.image}
+            //       referrerPolicy="no-referrer"
+            //     />
+            //     <Avatar.Fallback>{user?.name.charAt(0)}</Avatar.Fallback>
+            //   </Avatar>
+
+            //   <Button onClick={handleSignOut} size="sm" variant="danger">SignOut</Button>
+            // </div>
           )}
 
 
