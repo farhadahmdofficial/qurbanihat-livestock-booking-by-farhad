@@ -187,9 +187,9 @@ const Navber = () => {
 
           
 
-          {user && (<div className="space-y-1 border-2 border-gray-300">
+          {user && (<div className=" flex flex-row  items-center gap-3">
 
-            <div className='text-center'>
+            <div className=''>
 
               <Avatar size="sm">
                 <Avatar.Image
