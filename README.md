@@ -74,13 +74,3 @@ QurbaniHat is a modern, responsive digital marketplace designed for buying and s
 
 ---
 ⭐️ If you like this project, give it a star!
-```
-
-
-
-
-
-
-
-
-
