@@ -22,6 +22,20 @@ export default function SignUpPage() {
 
     const router = useRouter()
 
+
+
+    
+
+
+
+
+
+
+
+
+// drful
+
+
     const onSubmit = async (e) => {
         e.preventDefault();
 
@@ -49,7 +63,8 @@ export default function SignUpPage() {
             // toast.success("Account created successfully!", { id: toastId });
 
             toast.success("Account created successfully!", {
-                            id: loadingToast,
+                            id: toastId,
+                            // id: loadingToast,
                             duration: 3000, 
                             icon: '👋', 
                             style: {

@@ -13,7 +13,10 @@ export const auth = betterAuth({
     client
   }),
   
-  
+  // for local host 
+  // baseURL: process.env.BETTER_AUTH_URL || "http://localhost:3000",
+
+// for web site 
   baseURL: process.env.BETTER_AUTH_URL || "https://qurbanihat-livestock-booking-by-far-pi.vercel.app",
   secret: process.env.BETTER_AUTH_SECRET || "fallback_secret_for_build_only", 
 

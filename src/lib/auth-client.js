@@ -6,5 +6,6 @@ export const authClient = createAuthClient({
     
     // secret: process.env.BETTER_AUTH_SECRET,
     
+    // baseURL: "http://localhost:3000"
     baseURL: "https://qurbanihat-livestock-booking-by-far-pi.vercel.app"
 })
